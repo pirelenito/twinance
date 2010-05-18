@@ -1,1 +1,6 @@
+<% form_tag('/dashboard/add', {:method => 'get'}) do %>
+	<%= text_field_tag "symbol" %>
+	<%= submit_tag 'Add' %>
+<% end %>
 <%= render :partial => 'stock', :collection => @stocks %>
+<%= link_to 'clear ', :action => 'clear' %>
