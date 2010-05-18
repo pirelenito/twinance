@@ -1,21 +1,21 @@
 <% if stock.change > 0 then %>
-<div id="good_stock">
+<div class="good_stock">
 <% else %>
-<div id="bad_stock">
+<div class="bad_stock">
 <% end %>
-	<div id="stock_symbol">
+	<div class="stock_symbol">
 		<%= stock.symbol %>
 	</div>
-	<div id="stock_change">
+	<div class="stock_change">
 		<%= stock.change %>%
 	</div>
-	<div id="stock_value">
+	<div class="stock_value">
 		<%= stock.value %>
 	</div>
-	<div id="stock_twit">
+	<div class="stock_twit">
 		<%= stock.last_twit.text %>
 	</div>
-	<div id="stock_delete">
+	<div class="stock_delete">
 		<%= link_to "Delete...", {:action => "delete", :id => stock.symbol}, :confirm => "Are you sure?" %>
 	</div>
 </div>

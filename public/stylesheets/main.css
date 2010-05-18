@@ -3,7 +3,7 @@ body {
 	font-size:14px;
 }
 
-#good_stock, #bad_stock {
+.good_stock, .bad_stock {
 	margin:5px;
 	padding:5px;
 	border-style:solid;
@@ -12,26 +12,26 @@ body {
 	min-height:50px;
 }
 
-#good_stock {
+.good_stock {
 	background-color:#ccffcc;
 }
 
-#bad_stock {
+.bad_stock {
 	background-color:#ffcccc;
 }
 
-#stock_change {
+.stock_change {
 	float:right;
 	font-size:40px;
 	color:#aaaaaa;
 	margin-left:10px;
 }
 
-#stock_value {
+.stock_value {
 	font-style:bold;
 }
 
-#stock_symbol {
+.stock_symbol {
 	float:left;
 	font-size:20px;
 	margin-right:10px;
