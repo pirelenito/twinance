@@ -15,4 +15,7 @@
 	<div id="stock_twit">
 		<%= stock.last_twit.text %>
 	</div>
+	<div id="stock_delete">
+		<%= link_to "Delete...", {:action => "delete", :id => stock.symbol}, :confirm => "Are you sure?" %>
+	</div>
 </div>

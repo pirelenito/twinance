@@ -9,6 +9,11 @@ class DashboardController < ApplicationController
     redirect_to :action => :index
   end
   
+  def delete
+    session[:symbols] = session[:symbols].reject {|s| s.downcase.starts_with? params[:id].downcase}
+    redirect_to :action => :index
+  end
+  
   def index
     clear unless session[:symbols]
     
