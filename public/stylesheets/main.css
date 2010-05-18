@@ -1,0 +1,38 @@
+body {
+	font-family:verdana;
+	font-size:14px;
+}
+
+#good_stock, #bad_stock {
+	margin:5px;
+	padding:5px;
+	border-style:solid;
+	border-width:1px;
+	border-color:gray;
+	min-height:50px;
+}
+
+#good_stock {
+	background-color:#ccffcc;
+}
+
+#bad_stock {
+	background-color:#ffcccc;
+}
+
+#stock_change {
+	float:right;
+	font-size:40px;
+	color:#aaaaaa;
+	margin-left:10px;
+}
+
+#stock_value {
+	font-style:bold;
+}
+
+#stock_symbol {
+	float:left;
+	font-size:20px;
+	margin-right:10px;
+}
