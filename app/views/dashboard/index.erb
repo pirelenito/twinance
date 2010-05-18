@@ -3,4 +3,4 @@
 	<%= submit_tag 'Add' %>
 <% end %>
 <%= render :partial => 'stock', :collection => @stocks %>
-<%= link_to 'clear ', :action => 'clear' %>
+<%= link_to 'clear ', {:action => 'clear'}, :confirm => 'Are you sure?' %>
